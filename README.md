@@ -117,7 +117,7 @@ $$
 
 where $s_{\mathrm{pix}}$ is the detector pixel size in millimeters.
 
-The reciprocal linear dispersion is estimated as
+The linear dispersion is estimated as
 
 $$
 D_i=\frac{\Delta\lambda_i}{\Delta p_i},
