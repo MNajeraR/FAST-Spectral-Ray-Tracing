@@ -171,6 +171,13 @@ The project requires:
 
 Zemax OpticStudio must be installed and running with the FAST-JAAD optical model loaded in **configuration 3** before executing the ray-tracing scripts. PyZDDE provides the communication interface between Python and Zemax.
 
+## Citation
+
+If you use this software in your research, please cite:
+
+Nájera, M. R. (2026). *FAST Spectral Ray Tracing* (v1.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.23351854
+
 
 ## References
 
