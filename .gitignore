@@ -1,0 +1,25 @@
+# Zemax optical models and associated files
+Zemax/*
+!Zemax/.gitkeep
+
+# Generated numerical results and figures
+results/data/*
+results/figures/*
+!results/data/.gitkeep
+!results/figures/.gitkeep
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# IDE and operating system files
+.spyproject/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
