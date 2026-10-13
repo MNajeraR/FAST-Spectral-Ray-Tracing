@@ -73,23 +73,13 @@ where $u$ and $v$ are independent random variables uniformly distributed between
 
 ### Real-ray tracing
 
-For each field position and wavelength, rays are traced through the FAST-JAAD optical model using PyZDDE to communicate with Zemax OpticStudio.
-
-Field coordinates are converted to the normalized coordinates required by the optical model. Each ray is defined by its field coordinates $(H_x,H_y)$, normalized pupil coordinates $(P_x,P_y)$, and wavelength index.
-
-The ray-tracing procedure returns the intersection coordinates $(x_i,y_i)$ at the selected optical surface. Rays that do not produce valid intersections are excluded from the centroid calculation.
-
-The image-plane centroid is calculated from the successfully traced rays:
+For each field position and wavelength, rays are traced through the FAST-JAAD optical model using PyZDDE and Zemax OpticStudio. Each ray is defined by normalized field coordinates $(H_x,H_y)$, normalized pupil coordinates $(P_x,P_y)$, and a wavelength index. The ray-tracing procedure returns the intersection coordinates $(x_i,y_i)$ at the selected optical surface, from which the image-plane centroid is calculated using the $N$ successfully traced rays. These centroids are used to determine the spectral image positions and the projected separation between slit-edge fields:
 
 $$
 \bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_i,
 \qquad
-\bar{y}=\frac{1}{N}\sum_{i=1}^{N}y_i,
+\bar{y}=\frac{1}{N}\sum_{i=1}^{N}y_i.
 $$
-
-where $N$ is the number of valid rays.
-
-These centroids are used to determine the positions of spectral images and the projected separation between slit-edge fields.
 
 ### Spectral centroid displacement
 
