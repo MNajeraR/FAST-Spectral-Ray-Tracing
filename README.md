@@ -73,7 +73,7 @@ where $u$ and $v$ are independent random variables uniformly distributed between
 
 ### Real-ray tracing
 
-For each field position and wavelength, rays are traced through the FAST-JAAD optical model using PyZDDE and Zemax OpticStudio. Each ray is defined by normalized field coordinates $(H_x,H_y)$, normalized pupil coordinates $(P_x,P_y)$, and a wavelength index. The ray-tracing procedure returns the intersection coordinates $(x_i,y_i)$ at the selected optical surface, from which the image-plane centroid is calculated using the $N$ successfully traced rays. These centroids are used to determine the spectral image positions and the projected separation between slit-edge fields:
+Ray intersections at the selected optical surface are obtained using the `zGetTrace()` function from PyZDDE. Field coordinates are normalized as $(H_x,H_y)=(f_x/F_r,f_y/F_r)$, and each ray is specified by these coordinates, normalized pupil coordinates $(P_x,P_y)$, and a wavelength index. Only rays with zero error and vignetting codes are retained. Their intersection coordinates $(x_i,y_i)$ are used to calculate the image-plane centroid from the $N$ valid rays, providing the spectral image positions and the projected separation between slit-edge fields:
 
 $$
 \bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_i,
