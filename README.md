@@ -107,13 +107,13 @@ $$
 
 where $s_{\mathrm{pix}}$ is the detector pixel size in millimeters.
 
-The linear dispersion is estimated as
+TThe reciprocal linear dispersion is estimated as
 
 $$
 D_i=\frac{\Delta\lambda_i}{\Delta p_i},
 $$
 
-expressed in micrometers per pixel.
+expressed in micrometers per pixel, following the spectrometric definitions discussed by [Schroeder (2000, Chapter 12, pp. 305–310)](https://doi.org/10.1016/B978-012629810-9/50013-X).
 
 ### Spectral purity and resolving power
 
@@ -172,6 +172,20 @@ Zemax OpticStudio must be installed and running with the FAST-JAAD optical model
 
 ## References
 
-Araiza-Durán, J. A., Pignata, G., & Brucalassi, A. (2020). "Final design and performance of the Fully Automatic Spectrograph for Transient (FAST)." *Proceedings of SPIE*, **11447**, 114475R. Ground-based and Airborne Instrumentation for Astronomy VIII.
+Araiza-Durán, J. A., Pignata, G., & Brucalassi, A. (2020).
+"Final design and performance of the Fully Automatic Spectrograph for Transient (FAST)."
+*Proceedings of SPIE*, **11447**, 114475R.
+Ground-based and Airborne Instrumentation for Astronomy VIII.
 
 https://doi.org/10.1117/12.2562659
+
+Schroeder, D. J. (2000).
+*Astronomical Optics* (2nd ed.), Chapter 12, pp. 305–310.
+Academic Press.
+
+https://doi.org/10.1016/B978-012629810-9/50013-X
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+See the [LICENSE](LICENSE) file for details.
