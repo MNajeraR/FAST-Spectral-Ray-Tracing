@@ -1,5 +1,7 @@
 # FAST Spectral Ray Tracing
 
+[![DOI](https://zenodo.org/badge/1417819629.svg)](https://doi.org/10.5281/zenodo.23351853)
+
 Python tools for real-ray-tracing analysis of the **FAST low-resolution spectrograph** using **Zemax OpticStudio** and **PyZDDE**.
 
 ## Overview
